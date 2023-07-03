@@ -1,0 +1,22 @@
+﻿<Window x:Class="Recipeapplication.display"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Recipeapplication"
+        mc:Ignorable="d"
+        Title="display" Height="450" Width="800">
+    <Window.Resources>
+        <ImageBrush x:Key="BackgroundBrush" ImageSource="front.jpg"/>
+    </Window.Resources>
+    <Grid Background="{StaticResource BackgroundBrush}">
+        <ListBox x:Name="RecipeBox" HorizontalAlignment="Left" Height="300" Margin="50,45,0,0" VerticalAlignment="Top" Width="300" />
+        <Label x:Name="label1" Content="NAME " Foreground="White" HorizontalAlignment="Left" Margin="390,160,0,0" VerticalAlignment="Top" Height="42" Width="115"/>
+        <ComboBox x:Name="cmbName" HorizontalAlignment="Left" Margin="500,160,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbName_SelectionChanged"/>
+        <Button x:Name="btnview" Content="Search" HorizontalAlignment="Left"  Margin="450,220,0,0" VerticalAlignment="Top"  Height="36" Width="98" Click="btn_viewing"/>
+        <Button x:Name="btnreturn" Content="Return To Menu" HorizontalAlignment="Left"  Margin="450,310,0,0" VerticalAlignment="Top"  Height="36" Width="98" Click="btn_return"/>
+        <Button x:Name="btndelete" Content="Delete Recipe" HorizontalAlignment="Left"  Margin="450,270,0,0" VerticalAlignment="Top"  Height="36" Width="98" Click="btn_delete"/>
+
+
+    </Grid>
+</Window>

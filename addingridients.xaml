@@ -1,0 +1,28 @@
+﻿<Window x:Class="Recipeapplication.addingridients"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Recipeapplication"
+        mc:Ignorable="d"
+        Title="addingridients" Height="450" Width="600">
+    <Window.Resources>
+        <ImageBrush x:Key="BackgroundBrush" ImageSource="back.jpeg"/>
+    </Window.Resources>
+    <Grid Background="{StaticResource BackgroundBrush}">
+        <ListBox x:Name="lbname"  Margin="-200,-360,0,0" Height="20" Width="200"/>
+        <Label x:Name="foo" Content="Food Group : " HorizontalAlignment="Left"  Foreground="White" Margin="37,310,0,0" VerticalAlignment="Top" Height="42" Width="115"/>
+        <ComboBox x:Name="cmbFood" HorizontalAlignment="Left" Margin="280,310,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbFood_SelectionChanged"/>
+        <Label x:Name="label" Content="Ingridient Name : " HorizontalAlignment="Left" Margin="37,75,0,0"  Foreground="White" VerticalAlignment="Top" Height="42" Width="115"/>
+        <TextBox x:Name="txtingrid" HorizontalAlignment="Left" Height="34" Margin="280,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label1" Content="Quantity :" HorizontalAlignment="Left" Height="34" Margin="37,140,0,0" Foreground="White" VerticalAlignment="Top" Width="155"/>
+        <TextBox x:Name="txtQuant" HorizontalAlignment="Left" Height="34" Margin="280,142,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label2" Content="Unit of Measurement" HorizontalAlignment="Left" Height="34" Margin="37,200,0,0" Foreground="White" VerticalAlignment="Top" Width="155"/>
+        <TextBox x:Name="txtunit" HorizontalAlignment="Left" Height="34" Margin="280,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label3" Content="Calories :" HorizontalAlignment="Left" Height="34" Margin="37,250,0,0" Foreground="White" VerticalAlignment="Top" Width="155"/>
+        <TextBox x:Name="txtCalories" HorizontalAlignment="Left" Height="34" Margin="280,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_ad" Content="ADD Ingridient" HorizontalAlignment="Left" Margin="150,355,0,0" VerticalAlignment="Top" Height="20" Width="140" Click="btn_adding"/>
+        <Button x:Name="btn_next" Content="NEXT" HorizontalAlignment="Left" Margin="150,395,0,0" VerticalAlignment="Top" Height="20" Width="140" Click="btn_steps"/>
+
+    </Grid>
+</Window>

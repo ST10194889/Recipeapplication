@@ -1,0 +1,22 @@
+﻿<Window x:Class="Recipeapplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Recipeapplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="350">
+    <Window.Resources>
+        <ImageBrush x:Key="BackgroundBrush" ImageSource="front.jpg"/>
+    </Window.Resources>
+    <Grid Background="{StaticResource BackgroundBrush}">
+        <Label x:Name="lblHeading" Content="SANELE'S RECIPE APP" HorizontalAlignment="Left" Margin="100,30,0,0" VerticalAlignment="Top" Height="30" Width="180" Foreground="White"/>
+        <Button x:Name="btn_add" Content="Add A Recipe" HorizontalAlignment="Left" Margin="115,80,0,0" VerticalAlignment="Top" Height="36" Width="98" Click="btn_ADD"/>
+        <Button x:Name="btnDisplay" Content="Display Recipes" HorizontalAlignment="Left"  Margin="115,130,0,0" VerticalAlignment="Top"  Height="36" Width="98" Click="btn_display"/>
+        <Button x:Name="btnview" Content="View Recipe" HorizontalAlignment="Left"  Margin="115,180,0,0" VerticalAlignment="Top"  Height="36" Width="98" Click="btn_view"/>
+
+        <Button x:Name="btnExit" Content="Exit Application" HorizontalAlignment="Left" Margin="115,230,0,0" VerticalAlignment="Top" Height="36" Width="98" Click="btn_exit"/>
+    </Grid>
+   
+</Window>
+

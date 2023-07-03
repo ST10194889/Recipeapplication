@@ -1,0 +1,27 @@
+﻿<Window x:Class="Recipeapplication.DisplayWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Recipeapplication"
+        mc:Ignorable="d"
+        Title="DisplayWindow" Height="450" Width="700">
+    <Window.Resources>
+        <ImageBrush x:Key="BackgroundBrush" ImageSource="back.jpeg"/>
+    </Window.Resources>
+    <Grid Background="{StaticResource BackgroundBrush}">
+        <ListBox x:Name="RecipeBox" HorizontalAlignment="Left" Height="300" Margin="50,45,0,0" VerticalAlignment="Top" Width="300" />
+        <Label x:Name="label" Content="Search by " HorizontalAlignment="Left" Margin="470,30,0,0" VerticalAlignment="Top" Height="42" Width="115"/>
+        <Label x:Name="label1" Content="NAME " HorizontalAlignment="Left" Margin="390,70,0,0" VerticalAlignment="Top" Height="42" Width="115"/>
+        <ComboBox x:Name="cmbName" HorizontalAlignment="Left" Margin="540,70,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbName_SelectionChanged"/>
+        <Label x:Name="label2" Content="INGRIDIENT " HorizontalAlignment="Left" Margin="390,120,0,0" VerticalAlignment="Top" Height="42" Width="115"/>
+        <TextBox x:Name="txtingrid" HorizontalAlignment="Left" Height="34" Margin="540,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Slider x:Name="caloriesSlider" Minimum="0" Maximum="900" Value="0" TickFrequency="100" TickPlacement="BottomRight" Margin="520,50,0,0" Height="20" Width="150" />
+        <Label x:Name="label3" Content="FOOD GROUP " HorizontalAlignment="Left" Margin="390,170,0,0" VerticalAlignment="Top" Height="42" Width="115"/>
+        <ComboBox x:Name="cmbFood" HorizontalAlignment="Left" Margin="540,170,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbFood_SelectionChanged"/>
+
+        <Label x:Name="label4" Content="MAX CALORIES " HorizontalAlignment="Left" Margin="390,220,0,0" VerticalAlignment="Top" Height="42" Width="115"/>
+        <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left"  Margin="450,280,0,0" VerticalAlignment="Top"  Height="36" Width="98" Click="btn_display"/>
+      
+    </Grid>
+</Window>
